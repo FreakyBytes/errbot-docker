@@ -2,7 +2,8 @@ FROM python:3
 MAINTAINER Martin Peters
 
 # create err user and set it's home as working dir
-RUN mkdir -p /err/data && adduser -D -h /err err
+RUN useradd --home-dir /err err
+RUN mkdir -p /err/data
 WORKDIR /err
 
 # add config.py
