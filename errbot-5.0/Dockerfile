@@ -12,8 +12,8 @@ ADD config.py /err/config.py
 # define data as volume
 VOLUME /err/data
 
-# install errbot
-RUN pip install errbot~=5.0
+# install errbot and dependencies for backends
+RUN pip install errbot~=5.0 sleekxmpp pyasn1 pyasn1-modules irc hypchat slackclient python-telegram-bot
 
 # define command
 USER err
