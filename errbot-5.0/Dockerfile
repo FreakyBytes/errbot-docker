@@ -17,4 +17,4 @@ RUN pip install errbot~=5.0 sleekxmpp pyasn1 pyasn1-modules irc hypchat slackcli
 
 # define command
 USER err
-CMD ['/usr/local/bin/errbot']
+CMD ["/usr/local/bin/errbot"]
