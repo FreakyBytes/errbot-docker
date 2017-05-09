@@ -5,8 +5,11 @@ MAINTAINER Martin Peters
 RUN mkdir -p /err/data && adduser -D -h /err err
 WORKDIR /err
 
-# define data and config.py as volumes
-VOLUME /err/data /err/config.py
+# add config.py
+ADD config.py /err/config.py
+
+# define data as volume
+VOLUME /err/data
 
 # install errbot
 RUN pip install errbot~=5.0
