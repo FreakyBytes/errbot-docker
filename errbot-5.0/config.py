@@ -331,6 +331,8 @@ REVERSE_CHATROOM_RELAY = {}
 # certificate validation, which can be useful if you have a self-signed
 # certificate for example.
 #XMPP_CA_CERT_FILE = "/etc/ssl/certs/ca-certificates.crt"
+if os.environ.get('ERR_DISABLE_XMPP_CERT_CHECK', 'false').lower() == 'true':
+    XMPP_CA_CERT_FILE = None
 
 # Influence the security methods used on connection with XMPP-based
 # backends. You can use this to work around authentication issues with

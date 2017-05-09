@@ -28,3 +28,4 @@ Environment Variables
 | `ERR_ENDPOINT` | Endpoint of a selfhosted HipChat instance | `https://api.hipchat.com` |
 | `ERR_ADMINS` | Comma separated list of usernames with admin priviledges | Empty |
 | `ERR_CHATROOMS` | Comma separated list of chatrooms to join on startup | Empty |
+| `ERR_DISABLE_XMPP_CERT_CHECK` | Disables the certificate validation for XMPP connections if set to `true` | `false` |
